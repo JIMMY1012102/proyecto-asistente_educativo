@@ -144,3 +144,31 @@ Este sistema cumple con la **Ley N.º 29733 de Protección de Datos Personales**
 ## Licencia
 
 Este proyecto es de uso interno del Colegio Nacional de Ica (CNI).
+---
+
+## Estado de arquitectura
+
+**Arquitectura definida — semana 6**
+
+### Equipo
+
+- Malasquez Laredo Jimmy Alexander
+- Alvarez Calagua Nia Elizabeth
+- Rojas Castillo Sebastian Jaren
+
+### Documentación
+
+- `docs/adr/ADR-001.md` — Framework de aplicación
+- `docs/adr/ADR-002.md` — Base de datos y persistencia
+- `docs/adr/ADR-003.md` — Estructura del repositorio y ramas
+- `docs/arquitectura/` — C4, secuencia, despliegue y modelo de datos
+- `docs/maquetas/wireframe_v1.html` — Wireframe de semana 6
+
+### Entorno previsto
+
+- CodeIgniter 4
+- PHP 8.x
+- Apache de XAMPP
+- MySQL/MariaDB de XAMPP
+
+**Levantamiento final de CodeIgniter en XAMPP: [VERIFICAR EN SEMANA 7].**

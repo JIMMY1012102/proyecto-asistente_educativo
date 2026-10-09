@@ -73,4 +73,5 @@ htmlcov/
 *.tmp
 *.temp
 temp/
-tmp/
+tmp/*.bak_sesion5
+*.bak_sesion5
