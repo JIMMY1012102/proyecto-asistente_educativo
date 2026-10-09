@@ -1,0 +1,331 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Configuración inicial del proyecto y estructura de directorios": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959403746
+      },
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959423346
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790981626879
+      }
+    ],
+    "2.1 Crear modelos de datos de autenticación": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959404322
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790981632449
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791027250632
+      }
+    ],
+    "2.3 Implementar funciones de autenticación JWT": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959404793
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791027272255
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791031475129
+      }
+    ],
+    "3. Checkpoint - Verificar autenticación básica": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959405418
+      }
+    ],
+    "4.1 Crear modelos de dominio": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959405741
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790981634567
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791027252323
+      }
+    ],
+    "4.2 Implementar cliente MCP": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959406013
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791027277696
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791031456864
+      }
+    ],
+    "5.1 Crear funciones de cálculo": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959406392
+      }
+    ],
+    "5.3 Implementar funciones de ordenamiento": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959406818
+      }
+    ],
+    "6.1 Crear generador de reporte individual": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959407241
+      }
+    ],
+    "6.3 Crear generador de reporte grupal": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959407678
+      }
+    ],
+    "6.5 Crear generador de resumen institucional": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959408140
+      }
+    ],
+    "7. Checkpoint - Verificar lógica de negocio": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959408556
+      }
+    ],
+    "8.1 Crear cliente Gemini API": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959408849
+      }
+    ],
+    "8.2 Implementar clasificador de intenciones": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959409104
+      }
+    ],
+    "9.1 Crear sistema de logging estructurado": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959409387
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791027278422
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791031461342
+      }
+    ],
+    "10.1 Crear router de autenticación": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959409884
+      }
+    ],
+    "10.2 Implementar routers por rol - Estudiante": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959410240
+      }
+    ],
+    "10.3 Implementar routers por rol - Docente": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959410523
+      }
+    ],
+    "10.4 Implementar routers por rol - Dirección": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959410853
+      }
+    ],
+    "10.5 Implementar router de chat para lenguaje natural": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959411235
+      }
+    ],
+    "11. Checkpoint - Verificar API completa": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959411499
+      }
+    ],
+    "12.1 Crear páginas HTML base": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959411724
+      }
+    ],
+    "12.2 Implementar lógica JavaScript de autenticación": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959412099
+      }
+    ],
+    "12.3 Implementar interfaz del estudiante": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959412465
+      }
+    ],
+    "12.4 Implementar interfaz del docente": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959412680
+      }
+    ],
+    "12.5 Implementar interfaz de la dirección": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959412939
+      }
+    ],
+    "13.1 Crear esquema de base de datos": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959413417
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790981635627
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791027218745
+      }
+    ],
+    "13.2 Generar datos simulados": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959413748
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791027273226
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791031457791
+      }
+    ],
+    "14.1 Crear configuración de desarrollo": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959414067
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791027276247
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791031459388
+      },
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791031488161
+      }
+    ],
+    "14.2 Escribir documentación del proyecto": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959414363
+      }
+    ],
+    "15.1 Ejecutar suite completa de pruebas": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959414622
+      }
+    ],
+    "15.3 Integración final con servidor MCP": [
+      {
+        "executionId": "82a05f47-6012-493f-aede-37814c6b9732",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1790959415017
+      }
+    ],
+    "2. Implementar módulo de autenticación y control de acceso": [
+      {
+        "executionId": "7cb3c3a9-6aa9-44df-ad42-f05da8808994",
+        "chatSessionId": "sess_fa3a2439-a7ae-4db4-ad01-1a0b5e71af95",
+        "timestamp": 1791031482499
+      }
+    ]
+  }
+}

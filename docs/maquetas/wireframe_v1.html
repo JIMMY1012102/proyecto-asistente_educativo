@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireframe v1 - Asistente de Retroalimentación para Simulacros (CNI)</title>
+<style>
+  /* Solo grises. Navegación por anclas: la pantalla activa se elige con :target.
+     #reporte va ANTES de #entrada en el DOM para poder ocultar #entrada con "~". */
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #e6e6e6; color: #222; font: 15px/1.4 Arial, Helvetica, sans-serif; }
+  .pantalla { display: none; max-width: 720px; margin: 0 auto; padding: 16px; background: #fff; min-height: 100vh; }
+  #entrada { display: block; }
+  #reporte:target { display: block; }
+  #reporte:target ~ #entrada { display: none; }
+
+  header { display: flex; justify-content: space-between; align-items: center; gap: 12px;
+           border: 2px solid #222; padding: 10px; }
+  header strong { font-size: 17px; }
+  nav a { margin-left: 12px; color: #222; }
+  h1 { font-size: 20px; margin: 18px 0 4px; }
+  h2 { font-size: 16px; margin: 0 0 8px; }
+
+  .bloque { position: relative; border: 1px solid #555; padding: 28px 12px 12px; margin: 14px 0; }
+  .tag { position: absolute; top: 0; left: 0; background: #333; color: #fff;
+         font-size: 11px; padding: 2px 8px; }
+  .vacio { border: 2px dashed #888; background: #eee; min-height: 110px; text-align: center; color: #555; }
+  .vacio p { margin: 14px 0 0; font-size: 16px; }
+  .alterno { border-style: dashed; background: #f3f3f3; }
+  .alterno p { margin: 6px 0; padding: 6px; border: 1px solid #999; background: #fff; }
+
+  label { display: block; margin: 8px 0 2px; font-weight: bold; }
+  input { width: 100%; max-width: 320px; padding: 8px; border: 1px solid #555; background: #fff; font: inherit; }
+  .btn { display: inline-block; margin-top: 12px; padding: 8px 20px; border: 2px solid #222;
+         background: #ccc; color: #222; text-decoration: none; font-weight: bold; }
+  a:focus, input:focus { outline: 3px solid #000; outline-offset: 2px; }
+  .gris { color: #777; }
+
+  .resumen { display: flex; flex-wrap: wrap; gap: 10px; }
+  .resumen div { flex: 1 1 150px; border: 1px solid #888; padding: 8px; background: #f3f3f3; }
+  .resumen b { display: block; font-size: 22px; }
+
+  table { width: 100%; border-collapse: collapse; }
+  caption { text-align: left; margin-bottom: 6px; color: #555; }
+  th, td { border: 1px solid #888; padding: 6px 8px; text-align: left; }
+  th { background: #ddd; }
+  .barra { display: inline-block; height: 12px; background: #888; vertical-align: middle; margin-right: 6px; }
+  footer { margin-top: 18px; font-size: 13px; color: #555; }
+</style>
+</head>
+<body>
+
+<!-- ================= PANTALLA 2: REPORTE INDIVIDUAL (Req. 4) ================= -->
+<main class="pantalla" id="reporte">
+  <header>
+    <strong>Asistente CNI</strong>
+    <nav aria-label="Navegación">
+      <a href="#entrada">Inicio</a>
+      <a href="#entrada">Cerrar sesión</a>
+    </nav>
+  </header>
+
+  <h1>Mi reporte del último simulacro</h1>
+
+  <section class="bloque" aria-label="Identificación del estudiante">
+    <span class="tag">Req. 11.5</span>
+    <h2>Estudiante</h2>
+    <p>Código anonimizado: <b>EST-0001</b> (sin nombre real ni documento)</p>
+  </section>
+
+  <section class="bloque" aria-label="Resumen del simulacro">
+    <span class="tag">Req. 4.2</span>
+    <h2>Simulacro: Simulacro de admisión N.º 3 (ejemplo)</h2>
+    <p>Fecha de aplicación: 15/09/2026</p>
+    <div class="resumen">
+      <div><b>34 / 60</b>respuestas correctas</div>
+      <div><b>56.7 %</b>porcentaje de aciertos global</div>
+    </div>
+  </section>
+
+  <section class="bloque" aria-label="Temas con errores">
+    <span class="tag">Req. 4.1 · 3.2</span>
+    <table>
+      <caption>Temas donde tuvo al menos un error, de menor a mayor porcentaje de aciertos</caption>
+      <thead><tr><th>Tema</th><th>Porcentaje de aciertos</th></tr></thead>
+      <tbody>
+        <tr><td>Matemática</td><td><span class="barra" style="width:40px"></span>40.0 %</td></tr>
+        <tr><td>Comprensión lectora</td><td><span class="barra" style="width:55px"></span>55.0 %</td></tr>
+        <tr><td>Ciencias</td><td><span class="barra" style="width:70px"></span>70.0 %</td></tr>
+        <tr><td>Razonamiento verbal</td><td><span class="barra" style="width:85px"></span>85.0 %</td></tr>
+      </tbody>
+    </table>
+    <p class="gris"><span class="tag" style="position:static;display:inline-block">Req. 3.3</span>
+      Temas excluidos por no tener preguntas en este simulacro: 0</p>
+  </section>
+
+  <section class="bloque alterno" aria-label="Estados alternos">
+    <span class="tag">Req. 4.5 · 4.6 · 2.3</span>
+    <h2>Estados alternos (se muestra uno a la vez, nunca junto al reporte)</h2>
+    <p><b>Sin resultados:</b> No existen resultados disponibles para su cuenta.</p>
+    <p><b>Acceso no autorizado:</b> Este recurso no está disponible para su rol.</p>
+    <p><b>Servicio no disponible:</b> El servicio de datos no está disponible temporalmente. Intente de nuevo en unos minutos.</p>
+  </section>
+
+  <section class="bloque vacio" aria-label="Espacio reservado para el asistente">
+    <span class="tag">Req. 10 (reservado)</span>
+    <p>Asistente (Unidad 3)</p>
+    <p class="gris">Espacio vacío para el widget de chat en lenguaje natural (ruta /chat)</p>
+  </section>
+
+  <footer><span class="tag" style="position:static;display:inline-block">Req. 11.1</span>
+    Datos simulados. Ley N.º 29733 de Protección de Datos Personales.</footer>
+</main>
+
+<!-- ================= PANTALLA 1: ENTRADA / INICIO DE SESIÓN (Req. 1) ================= -->
+<main class="pantalla" id="entrada">
+  <header>
+    <strong>Asistente CNI</strong>
+    <span class="gris">Colegio Nacional de Ica · 5.º de secundaria</span>
+  </header>
+
+  <h1>Retroalimentación de simulacros de admisión</h1>
+
+  <section class="bloque" aria-label="Formulario de acceso">
+    <span class="tag">Req. 1.1</span>
+    <h2>Iniciar sesión</h2>
+    <label for="usuario">Usuario</label>
+    <input id="usuario" type="text" autocomplete="username" placeholder="p. ej. est_0001">
+    <label for="clave">Contraseña</label>
+    <input id="clave" type="password" autocomplete="current-password" placeholder="Contraseña">
+    <br>
+    <a class="btn" href="#reporte">Ingresar</a>
+    <p class="gris">En la maqueta, "Ingresar" abre la pantalla del Estudiante.</p>
+  </section>
+
+  <section class="bloque alterno" aria-label="Mensajes de acceso">
+    <span class="tag">Req. 1.2 · 1.4</span>
+    <h2>Mensajes posibles (se muestra uno a la vez)</h2>
+    <p><b>Credenciales incorrectas:</b> Usuario o contraseña incorrectos. (No indica cuál campo falló.)</p>
+    <p><b>Sesión vencida:</b> Su sesión ha expirado. Inicie sesión nuevamente.</p>
+  </section>
+
+  <section class="bloque" aria-label="Destino según rol">
+    <span class="tag">Req. 1.1 · 4</span>
+    <h2>Después de ingresar, cada rol llega a su propia vista</h2>
+    <p><a href="#reporte">Estudiante → Reporte individual</a></p>
+    <p class="gris">Docente → Reporte grupal (otra pantalla, fuera de esta maqueta)</p>
+    <p class="gris">Dirección → Resumen institucional (otra pantalla, fuera de esta maqueta)</p>
+  </section>
+
+  <section class="bloque vacio" aria-label="Espacio reservado para el asistente">
+    <span class="tag">Req. 10 (reservado)</span>
+    <p>Asistente (Unidad 3)</p>
+    <p class="gris">Visible solo después de iniciar sesión; aquí queda el espacio reservado</p>
+  </section>
+
+  <footer><span class="tag" style="position:static;display:inline-block">Req. 11.1</span>
+    Datos simulados. Ley N.º 29733 de Protección de Datos Personales.</footer>
+</main>
+
+<!--
+HISTORIAS QUE LA MAQUETA NO CUBRE Y POR QUÉ
+(Pantalla de entrada = Req. 1. Pantalla prioritaria = Req. 4, el caso de uso principal de design.md.)
+
+- Req. 1 (parcial): se cubren 1.1, 1.2 y 1.4 (formulario y mensajes). Quedan fuera 1.3, 1.5, 1.6 y 1.7:
+  son reglas de AuthFilter sobre cada solicitud y sin pantalla propia, salvo el mensaje de acceso
+  no autorizado, que aquí solo aparece como estado alterno de Req. 4.6.
+- Req. 2 Procesamiento de respuestas: proceso de fondo del servidor; el usuario solo ve sus consecuencias
+  (por eso solo se maqueta el mensaje de servicio no disponible de 2.3).
+- Req. 3 Clasificación de errores: es cálculo en CalculoService; se muestra solo su resultado (3.2 y 3.3).
+- Req. 5 Comparación entre simulacros: pantalla distinta; esta maqueta se limita a dos pantallas.
+- Req. 6 Orientación de refuerzo: pantalla distinta, por la misma razón.
+- Req. 7 y 8 (Docente): pantallas de otro rol; solo se indica su destino en la pantalla de entrada.
+- Req. 9 (Dirección): pantalla de otro rol; solo se indica su destino.
+- Req. 10 Lenguaje natural (Gemini): pertenece a la Unidad 3; solo se reserva el espacio "Asistente (Unidad 3)".
+- Req. 11 Protección de datos: es transversal; se refleja solo en el código anonimizado y en el pie
+  "Datos simulados", sin pantalla propia (logs y permisos no tienen interfaz).
+-->
+</body>
+</html>
